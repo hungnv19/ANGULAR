@@ -1,0 +1,336 @@
+.nav-link {
+    color: black;
+    font-size: 15px
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #130f40;
+    font-family: 'Lato' !important;
+}
+
+
+/* product */
+.product{
+    width: 100%;
+    text-align: center;
+}
+.menu-bar {
+   
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    height: fit-content;
+    display: inline-flex;
+    background-color: rgba(201, 199, 199, 0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    
+    margin: 20px 0 0 0;
+}
+
+.menu-bar li {
+    list-style: none;
+    color: rgb(63, 61, 61);
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.menu-bar li:hover {
+    color: black;
+}
+
+.menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: #fff;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:var(--green);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+    text-decoration: none;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:#fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+#search-form{
+    position: fixed;
+    top:-110%; left:0; 
+    height:100%; width:100%;
+    z-index: 1004;
+    background:rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+}
+
+#search-form.active{
+    top:0;
+}
+
+#search-form #search-box{
+    width:50rem;
+    border-bottom: .1rem solid #fff;
+    padding:1rem 0;
+    color:#fff;
+    font-size: 3rem;
+    text-transform: none;
+    background:none;
+}
+
+#search-form #search-box::placeholder{
+    color:#eee;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-form label{
+    color:#fff;
+    cursor:pointer;
+    font-size: 3rem;
+}
+
+#search-form label:hover{
+    color:var(--green);
+}
+
+#search-form #close{
+    position: absolute;
+    color:#fff;
+    cursor: pointer;
+    top: 2rem; right:3rem;
+    font-size: 5rem;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.banner1{
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.tieu-de{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+
+.container {
+    margin-top: 100px
+}
+
+.container .row .col-lg-4 {
+    display: flex;
+    
+    justify-content: center
+}
+
+.card {
+    
+    position: relative;
+    padding: 0;
+    margin: 0 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 570px;
+  
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+.card .card-image {
+    width: 100%;
+    
+}
+
+.card .card-image img {
+    width: 100%;
+   
+    object-fit: cover
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: -180px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    min-height: 140px;
+    width: 100%;
+    transition: bottom .4s ease-in;
+    box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.card:hover .card-content {
+    bottom: 0px
+}
+
+.card:hover .card-content h4,
+.card:hover .card-content h5 {
+    transform: translateY(10px);
+    opacity: 1
+}
+
+.card .card-content h4,
+.card .card-content h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: 0.8s;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition-delay: 0.2s
+}
+
+.card .card-content h5 {
+    transition: 0.5s;
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 2px
+}
+
+.card .card-content .social-icons {
+    list-style: none;
+    padding: 0
+}
+
+.card .card-content .social-icons li {
+    margin: 10px;
+    transition: 0.5s;
+    transition-delay: calc(0.15s * var(--i));
+    transform: translateY(50px)
+}
+
+.card:hover .card-content .social-icons li {
+    transform: translateY(20px)
+}
+
+.card .card-content .social-icons li a {
+    color: #fff
+}
+
+.card .card-content .social-icons li a span {
+    font-size: 1.3rem
+}
+
+@media(max-width: 991.5px) {
+    .container {
+        margin-top: 20px
+    }
+
+    .container .row .col-lg-4 {
+        margin: 20px 0px
+    }
+}
